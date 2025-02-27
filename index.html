@@ -63,21 +63,59 @@
     <p><b>Tout comme notre mouvement, ce site vient de naître... Un beau site est en préparation - revenez bientôt !</b></p>
 
 
-<div style="text-align: left">
-<form action="https://submit-form.com/AxSrmfnm8">
-  <label for="name">Nom</label></br>
-  <input type="text" id="name" name="name" placeholder="Votre nom" required="" /></br>
-  <label for="email">Email</label></br>
-  <input type="email" id="email" name="email" placeholder="Votre email" required="" /></br>
-  <label for="message">Message</label></br>
-  <textarea
-    id="message"
-    name="message"
-    placeholder="Message"
-    required=""
-  ></textarea></br>
-  <button type="submit">Envoyer</button>
-</form>
+<style>
+  .contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  .contact-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .contact-form textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  .contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0073aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .contact-form button:hover {
+    background-color: #005f8a;
+  }
+</style>
+
+<div class="contact-form">
+  <form action="https://submit-form.com/AxSrmfnm8">
+    <label for="name">Nom</label>
+    <input type="text" id="name" name="name" placeholder="Votre nom" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Votre email" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+
+    <button type="submit">Envoyer</button>
+  </form>
 </div>
     
 </div>
